@@ -10,7 +10,6 @@ Authors@R: c(
     )
   )
 Description: Lab code for 2025
-    
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
