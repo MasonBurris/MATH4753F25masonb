@@ -9,7 +9,7 @@ Authors@R: c(
       role = c("aut", "cre")
     )
   )
-Description: Lab code for 2025
+Description: Lab code for 2025.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
