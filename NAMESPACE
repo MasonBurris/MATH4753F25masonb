@@ -2,8 +2,10 @@
 
 export(myfirstfunction)
 export(scatterhist)
+export(z_values)
 importFrom(graphics,barplot)
 importFrom(graphics,hist)
 importFrom(graphics,layout)
 importFrom(graphics,mtext)
 importFrom(graphics,par)
+importFrom(stats,sd)
