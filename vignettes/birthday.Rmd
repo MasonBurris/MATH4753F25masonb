@@ -1,0 +1,21 @@
+---
+title: "birthday"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{birthday}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753F25masonb)
+```
+
+

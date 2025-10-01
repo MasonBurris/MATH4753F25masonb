@@ -16,3 +16,7 @@ LazyData: true
 URL: https://github.com/MasonBurris/MATH4753F25masonb
 BugReports: https://github.com/MasonBurris/MATH4753F25masonb/issues
 RoxygenNote: 7.3.2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
