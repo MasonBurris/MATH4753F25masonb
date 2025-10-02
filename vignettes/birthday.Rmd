@@ -1,5 +1,5 @@
 ---
-title: "birthday"
+title: "Birthday"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{birthday}
@@ -18,4 +18,29 @@ knitr::opts_chunk$set(
 library(MATH4753F25masonb)
 ```
 
+# Derivation
 
+\[
+p(\bar A)
+= \frac{365}{365}\cdot \frac{364}{365}\cdot \frac{363}{365}\cdots \frac{365 - n + 1}{365}
+= \frac{365!}{(365 - n)!}\cdot \frac{1}{365^n}.
+\]
+
+Thus, the probability for at least two people to share the same birthday is
+
+\[
+P(A) = 1 - P(\bar A)
+= 1 - \frac{365!}{(365 - n)!}\cdot \frac{1}{365^n}
+\]
+
+# Log reformulation
+
+\[
+\log p(\bar A) = \log(365!) - \log((365 - n)!) - n \log(365).
+\]
+
+# Birthday function in use
+
+```{r}
+birthday(20:25)
+```
