@@ -2,7 +2,7 @@
 title: "Birthday"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{birthday}
+  %\VignetteIndexEntry{Birthday}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
