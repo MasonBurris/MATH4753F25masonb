@@ -1,0 +1,23 @@
+---
+title: "mycltu"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{mycltu}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753F25masonb)
+```
+
+```{r}
+mycltu(n=20,iter=100000)
+```

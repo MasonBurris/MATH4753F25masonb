@@ -1,0 +1,23 @@
+---
+title: "mybin"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{mybin}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753F25masonb)
+```
+
+```{r}
+mybin(iter = 100, n = 10, p = 0.5)
+```

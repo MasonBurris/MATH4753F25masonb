@@ -1,0 +1,24 @@
+---
+title: "myboot2"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{myboot2}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753F25masonb)
+```
+
+```{r}
+sam <- rnorm(20, mean = 10, sd = 4)
+myboot2(10000,x=sam,fun="mean",alpha=0.05,xlab="mean",col="Purple",cx=1.5)
+```

@@ -1,0 +1,50 @@
+---
+title: "What the Package Does"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{What the Package Does}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753F25masonb)
+```
+
+# Fire Dataset
+```{r}
+data("fire")
+head(fire)
+```
+
+# mycltu
+```{r}
+mycltu(n = 20, iter = 5000)
+```
+
+# birthday
+```{r}
+birthday(23)
+birthday(1:20)
+```
+
+# myboot2
+```{r}
+sam <- rnorm(20, mean = 10, sd = 4)
+out_boot <- myboot2(iter = 2000, x = sam, fun = "mean", alpha = 0.05)
+out_boot$ci
+```
+
+# mybin
+```{r}
+mybin(iter = 500, n = 10, p = 0.5)
+```
+
+
